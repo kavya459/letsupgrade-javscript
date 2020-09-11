@@ -1,0 +1,139 @@
+Question:1
+<head>
+    <title>image</title>
+</head>
+<body>
+<Img src="https://i.ytimg.com/vi/puXswOcwOJE/maxresdefault.jpg">
+<button onclick="imagechange" class="image">click</button>
+<button onclick="imagechange()" class="image">click</button>
+<button Onclick="imagechange()" class="image"> click</button>
+
+<script>
+function imagechange()
+{ 
+  const element =document.getElementByclassName("image");
+const  secimg="https://cdn.educba.com/academy/wp-content/uploads/2018/09/Top-Uses-Of-JavaScript.jpg";
+const  thirdimg="https://i.pinimg.com/736x/50/df/34/50df34b9e93f30269853b96b09c37e3b.jpg";
+element.src=secimg;
+element.src=thirdimg;
+element.src=element;
+}
+
+</script>
+
+</html>
+
+
+
+Question:2
+
+<html>
+<head>
+<title>input</title>
+</head>
+<body>
+<form>
+   Write something<input type="text"  id="textcopy1"></input><br>
+    Write something<input type="text"  id="textcopy"></input>
+</form>
+<button onclick="copytext()">click</button>
+<script>
+function copytext()
+{
+  const ele=document.getElementById("textcopy");
+  console.log(ele[0].innertext);
+  let ele2=console.log(ele.innertext);
+}
+</script>
+</body>
+</html>
+     
+
+
+Question:3
+<html>
+<head>
+<title>array objects</title>
+</head>
+<body>
+<button onclick="register()">click</button>
+<script>
+function register()
+{
+let personinfo=[
+{ name: "madhu";
+   Age: 20
+   Country:"India";
+    Hobbies:["reading","painting","dancing"];
+},
+{name: "madhu shree";
+   Age: 25
+   Country:"America";
+    Hobbies:["playing cricket"];
+    },
+name: "swathi";
+   Age: 18
+   Country:"India";
+    Hobbies:["painting","writing novels"];
+},
+name: "Deepika";
+   Age: 16
+   Country:"India";
+    Hobbies:["crafting","reading"];
+};
+]
+console.log(personinfo);
+}
+</script>
+</body>
+</html>
+
+
+<html>
+<head>
+<title>array objects</title>
+</head>
+<body>
+<button onclick="register()">click</button>
+<script>
+function register()
+{
+let personinfo=[
+{ name: "madhu";
+   Age: 20
+   Country:"India";
+    Hobbies:["reading","painting","dancing"];
+},
+{name: "madhu shree";
+   Age: 25
+   Country:"America";
+    Hobbies:["playing cricket"];
+    },
+name: "swathi";
+   Age: 18
+   Country:"India";
+    Hobbies:["painting","writing novels"];
+},
+name: "Deepika";
+   Age: 16
+   Country:"India";
+    Hobbies:["crafting","reading"];
+};
+]
+console.log(personinfo);
+
+for(i=0;i<3;i++)
+{ 
+      if(personinfo.Age<30)
+      { 
+             console.log(personinfo[i]);
+       }
+       if(personinfo.Country=="India")
+       {
+              console.log(personinfo[i]);
+        }
+}
+}
+</script>
+</body>
+</html>
